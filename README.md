@@ -1,14 +1,14 @@
 # Statistical Machine Learning
 
 ### Overview
-This repository contains a collection of from-scratch implementations of fundamental statistical machine learning algorithms. The focus of these projects is on probabilistic modeling, dimensionality reduction, and mathematical derivations for classification, rather than relying on high-level black-box abstractions. 
+This repository contains a collection of from-scratch implementations of fundamental statistical machine learning algorithms. The focus of these projects is on probabilistic modeling, dimensionality reduction, and mathematical derivations for classification and regression, rather than relying on high-level black-box abstractions. 
 
-All models are built, trained, and tested on the MNIST dataset to evaluate their performance and feature space separation.
+All models are built, trained, and tested on the MNIST and Fashion MNIST datasets to evaluate their performance, feature space separation and predictive accuracy.
 
 ### Technologies Used
 * **Language:** Python
 * **Core Libraries:** NumPy, Pandas
-* **Visualization:** Matplotlib, scikit-learn (strictly for t-SNE projections)
+* **Visualization:** Matplotlib, scikit-learn (strictly for t-SNE projections and Lasso)
 * **Documentation:** LaTeX
 
 ---
@@ -23,8 +23,6 @@ All models are built, trained, and tested on the MNIST dataset to evaluate their
 * **Topics:** Principal Component Analysis (PCA), Fisher's Discriminant Analysis (FDA), Eigenvalue Decomposition.
 * **Summary:** Implemented dimensionality reduction pipelines to optimize feature spaces. Compared variance retention strategies (75% vs 90%) and analyzed the differences between unsupervised (PCA) and supervised (FDA) projection techniques.
 
-#### [Assignment 3: Upcoming](./Assignment-3-Upcoming)
-* **Topics:** *To be added*
-* **Summary:** *To be added*
-
----
+#### [Assignment 3: Regularization & Ensembles](./Assignment-3-Regularization-and-Ensembles)
+* **Topics:** Ridge & Lasso Regression, Decision Trees, Bagging, Random Forests, Out-of-Bag (OOB) Error.
+* **Summary:** Implemented regularized linear models to analyze feature sparsity and built custom decision trees using the weighted Gini index and Sum of Squared Residuals (SSR). Extended base trees into Bagged and Random Forest ensembles to demonstrate variance reduction on the MNIST and Fashion MNIST datasets.
